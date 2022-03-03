@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    }
+
+.contenair{
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100vh;
+    background-color: #E0E8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project {
+    width: 345px;
+    height:  545px;
+    background-color: #FAFAFC;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.img {
+    background-image: url(images/illustration-hero.svg);
+    background-size: cover;
+    width: 100%;
+    height: 30%;
+    border-radius: 25px 25px 0px 0px;
+}
+.text {
+    text-align: center;
+    width: 100%;
+    padding: 0px 5px;
+}
+.text h2 , .text p {
+    margin: 20px;
+}
+.text h2 {
+    color: #1F2E53;
+    font-weight: 900;
+}
+.text p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #99A0AF;
+    font-weight: 500;
+}
+.music {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music .mus-con {
+    width: 85%;
+    height:100% ;
+    background-color: #F8F9FE;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mus-con .mus-text{
+    margin-left: -140px;
+    
+}
+.mus-con .mus-text p {
+    margin: 8px;
+}
+.mus-con .mus-text p:first-child {
+    color: #1F2E4B;
+    font-weight: 900;
+}
+.mus-con .mus-text p:last-child{
+    color: #878CA0;
+}
+.mus-con .link {
+    color: #382AE1;
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+.mus-con .link:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+.btn {
+    width: 100%;
+    height: 15%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.btn .btn-1 {
+    margin: auto;
+    width: 85%;
+    background-color: #382AE1;
+    border-radius: 10px;
+    color: white;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-1:hover {
+    background-color: #766CF1;
+}
+.btn .btn-2 {
+    margin: auto;
+    margin-top: 15px;
+    width: 85%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #878CA0;
+    cursor: pointer;
+    font-weight: 700;
+}
+.btn-2:hover {
+    color: #2B3D61;
+}
+
+/* make it responseve */
+@media (max-width:1023px) {
+    .contenair{
+        background-image: url(images/pattern-background-mobile.svg);}
+}
+
+@media (min-width:1024px) {
+    .contenair{
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+    .project {
+        width: 370px;
+        height: 600px;
+    }
+    .text {
+        padding-top: 30px;
+        padding-bottom: 10px;}
+    
+}
